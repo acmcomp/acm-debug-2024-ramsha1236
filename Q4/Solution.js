@@ -7,7 +7,7 @@ function rotate(nums, k) {
 }
 
 function reverse(nums, start, end) {
-    while (start < end) {
+    while (start > end) {
         let temp = nums[start];
         nums[start] = nums[end];
         nums[end] = temp;
