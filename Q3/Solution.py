@@ -22,15 +22,16 @@ HTML_TEMPLATE = """
 """
 
 
-@app.route("/submit", methods=["GET"])
 def submit():
     data = request.form["person_name"]
     return f"Wassgud, {data}"
+@app.route("/submit", methods=["GET"])
 
 
-@app.route("/", methods=["GET"])
+
 def index():
     return HTML_TEMPLATE
+    @app.route("/", methods=["GET"])
 
 
 if __name__ == "__main__":
