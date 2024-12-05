@@ -3,9 +3,10 @@ from dataclasses import dataclass
 
 
 class User:
-    name: str
-    age: int
-
+    x={
+   "name": "str"
+    "age": "int"
+    } #declared a variable
     def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
